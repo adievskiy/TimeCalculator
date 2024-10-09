@@ -6,7 +6,7 @@ import java.lang.StringBuilder
 class CheckAndGet {
 
     fun checkTime(input: String): Boolean {
-        val check = Regex("""(\d+m)(\d+s)""")
+        val check = Regex("""(\d+h)(\d+m)(\d+s)""")
         return check.matches(input)
     }
 
