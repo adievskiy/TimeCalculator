@@ -51,6 +51,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     CheckAndGet().sumTime(first, second)
                 } else "Неверный ввод"
             }
+            R.id.buttonDifBTN -> {
+                if (CheckAndGet().checkTime(first) && CheckAndGet().checkTime(second)) {
+                    CheckAndGet().difTime(first, second)
+                } else "Неверный ввод"
+            }
             else -> "Ошибка"
         }
         resultTV.text = result.toString()
