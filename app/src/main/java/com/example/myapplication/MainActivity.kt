@@ -42,10 +42,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(v: View) {
-        var first = firstTimeET.text.toString()
-        var second = secondTimeET.text.toString()
-        val check = true
-        var result = when (v.id) {
+        val first = firstTimeET.text.toString()
+        val second = secondTimeET.text.toString()
+        val result = when (v.id) {
             R.id.buttonSumBTN -> {
                 if (CheckAndGet().checkTime(first) && CheckAndGet().checkTime(second)) {
                     CheckAndGet().sumTime(first, second)
@@ -58,6 +57,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
             else -> "Ошибка"
         }
-        resultTV.text = result.toString()
+        resultTV.text = result
     }
 }
