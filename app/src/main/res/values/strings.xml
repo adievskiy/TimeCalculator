@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="textHeaderTV">Калькулятор времени!</string>
+    <string name="textFirstTimeET">Введите значение в формате 1h23m32s</string>
+    <string name="textSecondTimeET">Введите значение в формате 1h23m32s</string>
+    <string name="textSumBTN">+</string>
+    <string name="textDifBTN">-</string>
+    <string name="textResultTV">Результат</string>
+</resources>
