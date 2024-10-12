@@ -6,4 +6,6 @@
     <string name="textSumBTN">+</string>
     <string name="textDifBTN">-</string>
     <string name="textResultTV">Результат</string>
+    <string name="resetItemMenuMain">Сброс</string>
+    <string name="exitItemMenuMain">Выход</string>
 </resources>

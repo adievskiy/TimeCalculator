@@ -7,6 +7,13 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        tools:ignore="MissingConstraints" />
+
     <TextView
         android:id="@+id/headerTV"
         android:layout_width="wrap_content"
@@ -17,7 +24,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarMain"
         app:layout_constraintVertical_bias="0.005" />
 
     <LinearLayout
@@ -65,6 +72,8 @@
             android:layout_marginLeft="2sp"
             android:layout_weight="1"
             android:text="@string/textSumBTN"
+            android:background="@color/buttonColor"
+            app:backgroundTint="@null"
             android:textSize="22sp"/>
         <Button
             android:id="@+id/buttonDifBTN"
@@ -74,6 +83,8 @@
             android:layout_marginLeft="2sp"
             android:layout_weight="1"
             android:text="@string/textDifBTN"
+            android:background="@color/buttonColor"
+            app:backgroundTint="@null"
             android:textSize="22sp"/>
     </LinearLayout>
 
