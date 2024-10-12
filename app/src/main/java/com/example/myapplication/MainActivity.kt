@@ -65,8 +65,20 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 firstTimeET.text.clear()
                 secondTimeET.text.clear()
                 resultTV.text = "Результат"
+                Toast.makeText(
+                    applicationContext,
+                    "Данные очищены",
+                    Toast.LENGTH_LONG
+                ).show()
             }
-            R.id.exitMenuMain -> finish()
+            R.id.exitMenuMain -> {
+                Toast.makeText(
+                    applicationContext,
+                    "Работа завершена",
+                    Toast.LENGTH_LONG
+                ).show()
+                finish()
+            }
         }
 
         return super.onOptionsItemSelected(item)
