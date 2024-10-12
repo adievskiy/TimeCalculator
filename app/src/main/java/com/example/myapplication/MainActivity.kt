@@ -64,6 +64,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.resetMenuMain -> {
                 firstTimeET.text.clear()
                 secondTimeET.text.clear()
+                resultTV.setTextColor(Color.parseColor("#000000"))
                 resultTV.text = "Результат"
                 Toast.makeText(
                     applicationContext,
